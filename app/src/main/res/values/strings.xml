@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Poulfase_M3</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- Main view strings -->
+    <string name="team">Team</string>
+    <string name="match">Match</string>
+    <string name="teams_short">T</string>
+    <string name="matches_played_short">P</string>
+
+</resources>
