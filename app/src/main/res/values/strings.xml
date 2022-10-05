@@ -3,10 +3,23 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
 
+    <!-- General strings -->
+    <string name="back">Back</string>
+
+
     <!-- Main view strings -->
+    <string name="group">Group</string>
     <string name="team">Team</string>
     <string name="match">Match</string>
     <string name="teams_short">T</string>
     <string name="matches_played_short">P</string>
+    <string name="create_group">Create Group</string>
+
+    <!-- Create group strings -->
+    <string name="select_logo">Select logo</string>
+    <string name="team_name">Team name:</string>
+    <string name="team_strength">Team strength:</string>
+    <string name="teams">Teams</string>
+    <string name="add">Add</string>
 
 </resources>
