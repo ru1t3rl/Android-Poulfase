@@ -31,6 +31,7 @@
             android:textSize="@dimen/heading_font_size" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTeams"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background_dark_transparent"

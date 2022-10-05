@@ -1,16 +1,19 @@
 package com.ru1t3rl.poulfase_m3.model
 
-data class GroupItem(
+import androidx.room.Entity
+
+@Entity(tableName = "groupTable")
+data class Group(
     val name: String,
-    val teams: List<TeamItem>,
-    val matches: List<List<MatchItem>>
+    val teams: List<Team>,
+    val matches: List<List<Match>>
 ) {
-    fun getTeam(teamName: String): TeamItem? {
+    fun getTeam(teamName: String): Team? {
         return teams.find { it.name == teamName }
     }
 
     // TODO: Get match based on team name and match number
-    fun getMatch(teamName: String, matchNumber: Int): MatchItem? {
+    fun getMatch(teamName: String, matchNumber: Int): Match? {
         if(matchNumber > matches.size) {
             return null
         }
