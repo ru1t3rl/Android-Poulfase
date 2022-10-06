@@ -1,12 +1,23 @@
 package com.ru1t3rl.poulfase_m3.model
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "groupTable")
 data class Group(
+    @ColumnInfo(name="teamName")
     val name: String,
+
+    @ColumnInfo(name="teams")
     val teams: List<Team>,
-    val matches: List<List<Match>> = listOf()
+
+    @ColumnInfo(name="matches")
+    var matches: List<List<Match>> = listOf(),
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name="id")
+    val id: Long? = null
 ) {
     fun getTeam(teamName: String): Team? {
         return teams.find { it.name == teamName }

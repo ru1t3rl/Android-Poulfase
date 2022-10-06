@@ -4,10 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
+import com.ru1t3rl.poulfase_m3.Converters
 import com.ru1t3rl.poulfase_m3.dao.GroupDao
 import com.ru1t3rl.poulfase_m3.model.Group
 
 @Database(entities = [Group::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class GroupDatabase : RoomDatabase() {
     abstract fun groupDao(): GroupDao
 
