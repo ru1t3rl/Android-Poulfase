@@ -6,7 +6,7 @@ import androidx.room.Entity
 data class Group(
     val name: String,
     val teams: List<Team>,
-    val matches: List<List<Match>>
+    val matches: List<List<Match>> = listOf()
 ) {
     fun getTeam(teamName: String): Team? {
         return teams.find { it.name == teamName }

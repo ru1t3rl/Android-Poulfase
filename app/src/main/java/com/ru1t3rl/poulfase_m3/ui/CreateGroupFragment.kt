@@ -5,18 +5,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ru1t3rl.poulfase_m3.adapter.TeamAdapater
 import com.ru1t3rl.poulfase_m3.databinding.FragmentCreateGroupBinding
+import com.ru1t3rl.poulfase_m3.model.Group
 import com.ru1t3rl.poulfase_m3.model.Team
+import com.ru1t3rl.poulfase_m3.viewmodel.GroupViewModel
 
 class CreateGroupFragment : Fragment() {
     private var _binding: FragmentCreateGroupBinding? = null
     private val binding get() = _binding!!
 
-    // TODO Add reference to GroupViewModel
+    private val groupViewModel: GroupViewModel by viewModels()
+
     private val teams = arrayListOf<Team>()
     private val teamAdapater = TeamAdapater(teams)
 
@@ -51,6 +56,10 @@ class CreateGroupFragment : Fragment() {
         binding.btnAddTeam.setOnClickListener {
             addTeam()
         }
+
+        binding.btnFinish.setOnClickListener{
+            finishGroup()
+        }
     }
 
     private fun addTeam() {
@@ -64,6 +73,19 @@ class CreateGroupFragment : Fragment() {
         teamAdapater.notifyDataSetChanged()
 
         resetFields()
+    }
+
+    private fun finishGroup() {
+        groupViewModel.insertGroup(
+            Group(
+                binding.tfTeamName.text.toString(),
+                teams
+            )
+        )
+
+        // TODO Show Snackbar
+
+        findNavController().popBackStack()
     }
 
     private fun resetFields() {

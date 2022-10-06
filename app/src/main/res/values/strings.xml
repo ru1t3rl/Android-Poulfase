@@ -17,9 +17,12 @@
 
     <!-- Create group strings -->
     <string name="select_logo">Select logo</string>
-    <string name="team_name">Team name:</string>
+    <string name="team_name_semicolon">Team name:</string>
     <string name="team_strength">Team strength:</string>
     <string name="teams">Teams</string>
     <string name="add">Add</string>
+    <string name="finish">Finish</string>
+    <string name="team_name">Team name</string>
+    <string name="group_name">Group name</string>
 
 </resources>
