@@ -1,4 +1,4 @@
-package com.ru1t3rl.poulfase_m3
+package com.ru1t3rl.poutlje
 
 import org.junit.Test
 

@@ -3,50 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/Main">
+    app:startDestination="@id/FirstFragment">
 
     <fragment
-        android:id="@+id/Main"
-        android:name="com.ru1t3rl.poulfase_m3.ui.MainFragment"
-        tools:layout="@layout/fragment_main">
-        <action
-            android:id="@+id/action_Main_to_groupFragment"
-            app:destination="@id/groupFragment" />
-        <action
-            android:id="@+id/action_Main_to_teamFragment"
-            app:destination="@id/teamFragment" />
-        <action
-            android:id="@+id/action_Main_to_createGroupFragment"
-            app:destination="@id/createGroupFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/teamFragment"
-        android:name="com.ru1t3rl.poulfase_m3.ui.TeamFragment"
-        android:label="TeamFragment"
-        tools:layout="@layout/fragment_team">
-        <action
-            android:id="@+id/action_teamFragment_to_groupFragment"
-            app:destination="@id/groupFragment" />
-        <action
-            android:id="@+id/action_teamFragment_to_Main"
-            app:destination="@id/Main" />
-    </fragment>
-    <fragment
-        android:id="@+id/groupFragment"
-        android:name="com.ru1t3rl.poulfase_m3.ui.GroupFragment"
-        android:label="GroupFragment"
-        tools:layout="@layout/fragment_group">
-        <action
-            android:id="@+id/action_groupFragment_to_teamFragment"
-            app:destination="@id/teamFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/createGroupFragment"
-        android:name="com.ru1t3rl.poulfase_m3.ui.CreateGroupFragment"
-        android:label="CreateGroupFragment"
-        tools:layout="@layout/fragment_create_group">
-        <action
-            android:id="@+id/action_createGroupFragment_to_Main"
-            app:destination="@id/Main" />
-    </fragment>
+        android:id="@+id/FirstFragment"
+        android:name="com.ru1t3rl.poutlje.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first"/>
 </navigation>

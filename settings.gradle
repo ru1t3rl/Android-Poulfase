@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Poulfase_M3"
+rootProject.name = "poutlje"
 include ':app'

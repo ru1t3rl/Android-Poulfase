@@ -1,28 +1,23 @@
 <resources>
-    <string name="app_name">Poulfase_M3</string>
+    <string name="app_name">poutlje</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
-    <!-- General strings -->
-    <string name="back">Back</string>
+    <string name="simulate">Simulate</string>
+    <string name="title_team">Team</string>
+    <string name="title_played">MP</string>
+    <string name="title_goals">GF</string>
+    <string name="title_goals_against">GA</string>
+    <string name="title_goals_difference">GD</string>
+    <string name="title_points">Pts</string>
 
+    <string name="round">Round %1$d</string>
+    <string name="score_divider">-</string>
 
-    <!-- Main view strings -->
-    <string name="group">Group</string>
-    <string name="team">Team</string>
-    <string name="match">Match</string>
-    <string name="teams_short">T</string>
-    <string name="matches_played_short">P</string>
-    <string name="create_group">Create Group</string>
-
-    <!-- Create group strings -->
-    <string name="select_logo">Select logo</string>
-    <string name="team_name_semicolon">Team name:</string>
-    <string name="team_strength">Team strength:</string>
-    <string name="teams">Teams</string>
-    <string name="add">Add</string>
-    <string name="finish">Finish</string>
-    <string name="team_name">Team name</string>
-    <string name="group_name">Group name</string>
-
+    <!-- Error Messages -->
+    <string name="error_max_rounds">All rounds have already been played!</string>
 </resources>

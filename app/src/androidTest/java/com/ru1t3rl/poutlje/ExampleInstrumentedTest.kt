@@ -1,4 +1,4 @@
-package com.ru1t3rl.poulfase_m3
+package com.ru1t3rl.poutlje
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ru1t3rl.poulfase_m3", appContext.packageName)
+        assertEquals("com.ru1t3rl.poutlje", appContext.packageName)
     }
 }
